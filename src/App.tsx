@@ -15,7 +15,7 @@ function App() {
         <StarField />
         <Layout>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/mr2-mini-app" element={<HomePage />} />
             <Route path="/earn" element={<EarnPage />} />
             <Route path="/memepad" element={<MemepadPage />} />
             <Route path="/frens" element={<FrensPage />} />
