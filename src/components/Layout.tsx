@@ -1,15 +1,15 @@
-import { Home, Coins, MessageSquare, Users, Wallet } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Home, Coins, MessageSquare, Users, Wallet } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
-  
+
   const navItems = [
-    { icon: Home, label: 'Home', path: '/' },
-    { icon: Coins, label: 'Earn', path: '/earn' },
-    { icon: MessageSquare, label: 'Memepad', path: '/memepad' },
-    { icon: Users, label: 'Frens', path: '/frens' },
-    { icon: Wallet, label: 'Wallet', path: '/wallet' }
+    { icon: Home, label: "Home", path: "/mr2-mini-app" },
+    { icon: Coins, label: "Earn", path: "/earn" },
+    { icon: MessageSquare, label: "Memepad", path: "/memepad" },
+    { icon: Users, label: "Frens", path: "/frens" },
+    { icon: Wallet, label: "Wallet", path: "/wallet" },
   ];
 
   return (
@@ -22,9 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <button className="p-2">⋮</button>
       </header>
 
-      <main className="pt-16 pb-20">
-        {children}
-      </main>
+      <main className="pt-16 pb-20">{children}</main>
 
       <nav className="fixed bottom-0 w-full bg-black/90 backdrop-blur-sm border-t border-gray-800">
         <div className="flex justify-around p-2">
@@ -36,7 +34,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 key={item.path}
                 to={item.path}
                 className={`flex flex-col items-center p-2 ${
-                  isActive ? 'text-white' : 'text-gray-500'
+                  isActive ? "text-white" : "text-gray-500"
                 }`}
               >
                 <Icon size={20} />
