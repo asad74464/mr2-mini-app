@@ -10,12 +10,12 @@ import "./styles/animations.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mr2-mini-app">
       <div className="min-h-screen bg-black text-white relative">
         <StarField />
         <Layout>
           <Routes>
-            <Route path="/mr2-mini-app" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/earn" element={<EarnPage />} />
             <Route path="/memepad" element={<MemepadPage />} />
             <Route path="/frens" element={<FrensPage />} />

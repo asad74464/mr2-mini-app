@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
 
   const navItems = [
-    { icon: Home, label: "Home", path: "/mr2-mini-app" },
+    { icon: Home, label: "Home", path: "/" },
     { icon: Coins, label: "Earn", path: "/earn" },
     { icon: MessageSquare, label: "Memepad", path: "/memepad" },
     { icon: Users, label: "Frens", path: "/frens" },
